@@ -4,7 +4,7 @@ import PropertyForm from '@/components/admin/PropertyForm';
 export const dynamic = 'force-dynamic';
 
 export default async function EditPropertyPage({ params }) {
-  const { id } = await params; // AWAIT params first
+  const { id } = await params; 
   const property = await getPropertyById(id);
 
   if (!property) {

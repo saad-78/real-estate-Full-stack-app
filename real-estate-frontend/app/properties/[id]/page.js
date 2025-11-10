@@ -3,7 +3,7 @@ import { getPropertyById } from '@/lib/api';
 import ImageGallery from '@/components/user/ImageGallery';
 
 export default async function PropertyDetailPage({ params }) {
-  const { id } = await params; // AWAIT params first
+  const { id } = await params; 
   const property = await getPropertyById(id);
 
   if (!property) {
@@ -100,12 +100,6 @@ export default async function PropertyDetailPage({ params }) {
                     </p>
                   </div>
                 )}
-
-                <div className="mt-8">
-                  <button className="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 font-semibold">
-                    Contact Builder
-                  </button>
-                </div>
               </div>
             </div>
           </div>

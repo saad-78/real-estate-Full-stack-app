@@ -27,7 +27,6 @@ export default function SearchFilter({ onFilter }) {
       <h2 className="text-xl font-bold text-gray-900 mb-4">Search Properties</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        {/* Search by Name */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Project Name
@@ -42,7 +41,6 @@ export default function SearchFilter({ onFilter }) {
           />
         </div>
 
-        {/* Location Filter */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Location
@@ -57,7 +55,6 @@ export default function SearchFilter({ onFilter }) {
           />
         </div>
 
-        {/* Min Price */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Min Price (₹)
@@ -72,7 +69,6 @@ export default function SearchFilter({ onFilter }) {
           />
         </div>
 
-        {/* Max Price */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Max Price (₹)
@@ -88,7 +84,6 @@ export default function SearchFilter({ onFilter }) {
         </div>
       </div>
 
-      {/* Reset Button */}
       <button
         onClick={handleReset}
         className="mt-4 px-6 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300"

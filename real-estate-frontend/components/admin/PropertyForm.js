@@ -204,7 +204,6 @@ export default function PropertyForm({ property = null }) {
         </div>
       </div>
 
-      {/* Buttons */}
       <div className="flex gap-4 mt-6">
         <button
           type="submit"

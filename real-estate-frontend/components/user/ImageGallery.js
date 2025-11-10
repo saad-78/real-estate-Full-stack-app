@@ -20,7 +20,6 @@ export default function ImageGallery({ images, mainImage }) {
 
   return (
     <div className="relative">
-      {/* Main Image Display */}
       <div className="relative h-96 md:h-[500px] bg-gray-200 rounded-lg overflow-hidden">
         <img
           src={allImages[currentIndex]}
@@ -28,7 +27,6 @@ export default function ImageGallery({ images, mainImage }) {
           className="w-full h-full object-cover"
         />
 
-        {/* Navigation Arrows */}
         {allImages.length > 1 && (
           <>
             <button
@@ -73,13 +71,11 @@ export default function ImageGallery({ images, mainImage }) {
           </>
         )}
 
-        {/* Image Counter */}
         <div className="absolute bottom-4 right-4 bg-black bg-opacity-70 text-white px-3 py-1 rounded-full text-sm">
           {currentIndex + 1} / {allImages.length}
         </div>
       </div>
 
-      {/* Thumbnail Navigation */}
       {allImages.length > 1 && (
         <div className="flex gap-2 mt-4 overflow-x-auto pb-2">
           {allImages.map((image, index) => (

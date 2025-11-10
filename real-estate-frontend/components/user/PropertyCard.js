@@ -4,7 +4,6 @@ export default function PropertyCard({ property }) {
   return (
     <Link href={`/properties/${property.id}`}>
       <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
-        {/* Main Image */}
         <div className="relative h-64 w-full">
           <img
             src={property.main_image}
@@ -16,7 +15,6 @@ export default function PropertyCard({ property }) {
           </div>
         </div>
 
-        {/* Property Info */}
         <div className="p-6">
           <h3 className="text-xl font-bold text-gray-900 mb-2">
             {property.project_name}
